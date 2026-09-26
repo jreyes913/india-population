@@ -28,9 +28,9 @@ $$g_t = \frac{P_{t+1} - P_t}{P_t} \approx r\left(1 - \text{Stress}_t\right)$$
 
 Population is capped by whichever resource (water or energy) runs out first, not an average of both.
 
-$$K_t = \min\left(\text{water\_capacity}_t,\ \text{energy\_capacity}_t\right)$$
+$$K_t = \min\left(\text{water_{capacity}}_t,\ \text{energy_{capacity}}_t\right)$$
 
-$$\text{water\_capacity}_t = P_t \cdot \frac{W_t}{w_{\min}}, \qquad \text{energy\_capacity}_t = P_t \cdot \frac{E_t}{e_{\min}}$$
+$$\text{water_{capacity}}_t = P_t \cdot \frac{W_t}{w_{\min}}, \qquad \text{energy_{capacity}}_t = P_t \cdot \frac{E_t}{e_{\min}}$$
 
 | Variable | Description |
 |---|---|
