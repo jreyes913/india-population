@@ -28,12 +28,14 @@ $$g_t = \frac{P_{t+1} - P_t}{P_t} \approx r\left(1 - \text{Stress}_t\right)$$
 
 Population is capped by whichever resource (water or energy) runs out first, not an average of both.
 
-$$K_t = \min\left(\text{water_{capacity}}_t,\ \text{energy_{capacity}}_t\right)$$
+$$K_t = \min\left(K_t^{W},\ K_t^{E}\right)$$
 
-$$\text{water_{capacity}}_t = P_t \cdot \frac{W_t}{w_{\min}}, \qquad \text{energy_{capacity}}_t = P_t \cdot \frac{E_t}{e_{\min}}$$
+$$K_t^{W} = P_t \cdot \frac{W_t}{w_{\min}}, \qquad K_t^{E} = P_t \cdot \frac{E_t}{e_{\min}}$$
 
 | Variable | Description |
 |---|---|
+| $K_t^{W}$ | Water-only carrying capacity in year $t$ |
+| $K_t^{E}$ | Energy-only carrying capacity in year $t$ |
 | $W_t$ | Water per capita available in year $t$ (m³/person/year) |
 | $E_t$ | Energy per capita available in year $t$ (GJ/person/year) |
 | $w_{\min}$ | Minimum sustainable water per capita — the scarcity threshold |
